@@ -1,0 +1,14 @@
+@use '/src/assets/styles/variables' as variables;
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	> button {
+		background-color: transparent;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		color: white;
+	}
+}
