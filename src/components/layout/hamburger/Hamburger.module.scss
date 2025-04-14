@@ -10,6 +10,14 @@
 		outline: none;
 		cursor: pointer;
 	}
+	> button {
+		svg {
+			font-size: 30px;
+			path {
+				fill: #fff;
+			}
+		}
+	}
 
 	.menu {
 		position: absolute;

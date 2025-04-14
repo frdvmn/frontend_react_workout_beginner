@@ -7,7 +7,7 @@ function Header({ backLink }) {
 	return (
 		<header className={styles.header}>
 			<button onClick={() => {}}>
-				<FiArrowLeft size={24} />
+				<FiArrowLeft />
 			</button>
 			<Hamburger />
 		</header>

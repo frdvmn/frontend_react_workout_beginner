@@ -10,5 +10,10 @@
 		outline: none;
 		cursor: pointer;
 		color: white;
+
+		font-size: 30px;
+		> svg > path {
+			fill: white;
+		}
 	}
 }

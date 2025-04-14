@@ -1,4 +1,5 @@
 @use '_variables.scss' as variables;
+@use 'sass:color';
 * {
 	margin: 0;
 	padding: 0;
@@ -65,4 +66,38 @@ img {
 
 #root {
 	height: 100%;
+}
+
+.dark-link {
+	text-align: right;
+	width: 100%;
+	display: block;
+	margin-bottom: 0.5rem;
+	text-decoration: none;
+	color: variables.$dark-accent;
+	transition: color 0.3s ease;
+
+	&:hover {
+		color: color.adjust(variables.$accent, $lightness: -10%);
+	}
+}
+
+.wrapper-inner-page {
+	padding: 40px 30px;
+	text-align: center;
+	max-width: 560px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+	-moz-appearance: textfield;
 }

@@ -6,5 +6,13 @@
 	"singleQuote": true,
 	"arrowParens": "avoid",
 	"importOrderSeparation": true,
-	"importOrderSortSpecifiers": true
+	"importOrderSortSpecifiers": true,
+	"importOrder": [
+		"<THIRD_PARTY_MODULES>",
+		"/hooks/",
+		"/screens/",
+		"/components/",
+		"^../(.*)",
+		"^./(.*)"
+	]
 }
