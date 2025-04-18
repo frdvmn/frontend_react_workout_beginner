@@ -7,13 +7,18 @@ function Router() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				{routes.map(route => (
-					<Route
-						key={route.path}
-						path={route.path}
-						element={<route.component />}
-					></Route>
-				))}
+				{routes.map(route => {
+					if (route.isAuth && !isAuth) {
+						return false
+					}
+					return (
+						<Route
+							key={route.path}
+							path={route.path}
+							element={<route.component />}
+						></Route>
+					)
+				})}
 				<Route path="*" element={<NotFound />}></Route>
 			</Routes>
 		</BrowserRouter>

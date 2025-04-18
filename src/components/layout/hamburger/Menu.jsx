@@ -1,7 +1,7 @@
 import clsx from 'clsx'
+import { Link } from 'react-router'
 import styles from './Hamburger.module.scss'
 import { menu } from './menu.data.js'
-
 function Menu({ isShow }) {
 	const logoutHandler = () => {}
 
@@ -14,8 +14,7 @@ function Menu({ isShow }) {
 			<ul>
 				{menu.map((item, index) => (
 					<li key={`_menu_${index}`}>
-						{item.title}
-						{/* <Link to={item.link}>{item.title}</Link> */}
+						<Link to={item.link}>{item.title}</Link>
 					</li>
 				))}
 				<li>
